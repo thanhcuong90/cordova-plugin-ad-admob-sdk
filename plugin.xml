@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-ad-admobsdk"
-    version="1.0.24">
+    version="1.0.26">
 	
     <name>Cordova Admob SDK</name>
     <description>Cordova Admob SDK</description>
@@ -61,7 +61,9 @@
         <framework src="CoreTelephony.framework" />
 		<framework src="EventKit.framework" />
 		<framework src="EventKitUI.framework" />		
-		<framework src="QuartzCore.framework" />		
+		<framework src="QuartzCore.framework" />
+
+		<hook type="after_plugin_add" src="hooks/after_plugin_add/000-create-links.sh" />
 	</platform>
 	
     <!-- wp8 -->
@@ -79,7 +81,7 @@
 	
     <!-- windows (wp8.1) -->
     <platform name="windows">
-        <config-file target="package.windows.appxmanifest" parent="/Package/Capabilities">
+	    <config-file target="package.windows.appxmanifest" parent="/Package/Capabilities">
 		    <Capability Name="internetClientServer" />
         </config-file>
         <config-file target="package.windows80.appxmanifest" parent="/Package/Capabilities">
