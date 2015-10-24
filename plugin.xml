@@ -2,15 +2,15 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-ad-admobsdk"
-    version="1.0.23">
+    version="1.0.24">
 	
     <name>Cordova Admob SDK</name>
     <description>Cordova Admob SDK</description>
     <author>Sang Ki Kwon (Cranberrygame)</author>		
     <license>MIT</license>
     <keywords>cordova,plugin,ad,admobsdk,monetisation</keywords>
-    <repo>https://github.com/cranberrygame/cordova-plugin-ad-admob</repo>
-    <issue>https://github.com/cranberrygame/cordova-plugin-ad-admob/issues</issue> 	
+    <repo>https://github.com/cranberrygame/cordova-plugin-ad-admobsdk</repo>
+    <issue>https://github.com/cranberrygame/cordova-plugin-ad-admobsdk/issues</issue> 	
 	<engines>
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
@@ -76,4 +76,19 @@
 		
 		<framework src="src/wp8/GoogleAds.dll" custom="true" />
     </platform>
+	
+    <!-- windows (wp8.1) -->
+    <platform name="windows">
+        <config-file target="package.windows.appxmanifest" parent="/Package/Capabilities">
+		    <Capability Name="internetClientServer" />
+        </config-file>
+        <config-file target="package.windows80.appxmanifest" parent="/Package/Capabilities">
+		    <Capability Name="internetClientServer" />
+        </config-file>
+        <config-file target="package.phone.appxmanifest" parent="/Package/Capabilities">
+		    <Capability Name="internetClientServer" />
+        </config-file>
+	
+		<framework src="src/wp8/GoogleAds.dll" custom="true" />
+    </platform>	
 </plugin>
