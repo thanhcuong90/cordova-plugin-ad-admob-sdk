@@ -63,7 +63,9 @@
 		<framework src="EventKitUI.framework" />		
 		<framework src="QuartzCore.framework" />
 
+<!--
 		<hook type="after_plugin_add" src="hooks/after_plugin_add/000-create-links.sh" />
+--> 
 	</platform>
 	
     <!-- wp8 -->
