@@ -8,8 +8,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import <GoogleMobileAds/GoogleMobileAdsDefines.h>
-
 @protocol GADCustomEventBanner;
 
 /// Call back to this delegate in your custom event. You must call customEventBanner:didReceiveAd:
@@ -57,6 +55,6 @@
 
 - (void)customEventBanner:(id<GADCustomEventBanner>)customEvent
         clickDidOccurInAd:(UIView *)view
-    GAD_DEPRECATED_MSG_ATTRIBUTE("Use customEventBannerWasClicked:.");
+    __attribute__((deprecated("Use customEventBannerWasClicked:.")));
 
 @end

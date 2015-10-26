@@ -8,18 +8,17 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import <GoogleMobileAds/GADAdLoaderDelegate.h>
-#import <GoogleMobileAds/GADNativeAd.h>
-#import <GoogleMobileAds/GADNativeAdImage.h>
-#import <GoogleMobileAds/GoogleMobileAdsDefines.h>
+#import "../GADAdLoaderDelegate.h"
+#import "GADNativeAd.h"
+#import "GADNativeAdImage.h"
 
 #pragma mark - Native Content Ad Assets
 
-/// For use with GADAdLoader's creation methods. If you request this ad type, your delegate must
-/// conform to the GADNativeContentAdRequestDelegate protocol.
-///
-/// See GADNativeAdImageAdLoaderOptions.h for ad loader image options.
-GAD_EXTERN NSString *const kGADAdLoaderAdTypeNativeContent;
+// For use with GADAdLoader's creation methods. If you request this ad type, your delegate must
+// conform to the GADNativeContentAdRequestDelegate protocol.
+//
+// See GADNativeAdImageAdLoaderOptions.h for ad loader image options.
+extern NSString *const kGADAdLoaderAdTypeNativeContent;
 
 /// Native content ad.
 @interface GADNativeContentAd : GADNativeAd
@@ -41,6 +40,7 @@ GAD_EXTERN NSString *const kGADAdLoaderAdTypeNativeContent;
 @property(nonatomic, readonly, copy) NSString *callToAction;
 /// Identifies the advertiser. For example, the advertiser’s name or visible URL.
 @property(nonatomic, readonly, copy) NSString *advertiser;
+
 @end
 
 #pragma mark - Protocol and constants

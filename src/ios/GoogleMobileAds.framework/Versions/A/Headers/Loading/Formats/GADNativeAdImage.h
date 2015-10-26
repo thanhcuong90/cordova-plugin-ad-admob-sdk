@@ -17,7 +17,4 @@
 /// The image's URL.
 @property(nonatomic, readonly, strong) NSURL *imageURL;
 
-/// The image's scale.
-@property(nonatomic, readonly, assign) CGFloat scale;
-
 @end

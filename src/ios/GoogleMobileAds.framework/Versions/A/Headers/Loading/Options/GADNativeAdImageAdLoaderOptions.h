@@ -5,7 +5,7 @@
 //  Copyright 2015 Google Inc. All rights reserved.
 //
 
-#import <GoogleMobileAds/GADAdLoader.h>
+#import "../GADAdLoader.h"
 
 /// Native ad image orientation preference.
 typedef NS_ENUM(NSInteger, GADNativeAdImageAdLoaderOptionsOrientation) {
