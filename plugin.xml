@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-ad-admobsdk"
-    version="1.0.27">
+    version="1.0.28">
 	
     <name>Cordova Admob SDK</name>
     <description>Cordova Admob SDK</description>
@@ -45,8 +45,10 @@
 <!--
 		<dependency id="com.google.playservices" url="https://github.com/MobileChromeApps/google-play-services" commit="1f56399572d255193f8f9564843df60e50938e69" />
 		<framework src="com.google.android.gms:play-services-ads:7.5.0" />
--->		
+
 		<dependency id="com.google.playservices@21.0.0" />
+-->		
+		<dependency id="cordova-plugin-extras-google-play-services" />			
     </platform>
 
 	<!-- ios -->
