@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-ad-admob-sdk"
-    version="1.0.32">
+    version="1.0.33">
 	
     <name>Cordova Admob SDK</name>
     <description>Cordova Admob SDK</description>
@@ -25,6 +25,8 @@
         <config-file target="AndroidManifest.xml" parent="/*">
 			<uses-permission android:name="android.permission.INTERNET"/>
 			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+			<!-- After May 18, 2016, AdMob will begin using location data to target ads and improve monetization for users who have granted this permission to the app. -->
+			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
         </config-file>		
 		
 		<!-- cranberrygame start: com.google.playservices -->
