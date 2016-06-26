@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-ad-admob-sdk"
-    version="1.0.33">
+    version="1.0.34">
 	
     <name>Cordova Admob SDK</name>
     <description>Cordova Admob SDK</description>
@@ -50,7 +50,7 @@
 
 		<dependency id="com.google.playservices@21.0.0" />
 -->
-		<dependency id="cordova-plugin-extras-google-play-services" />			
+		<dependency id="cordova-plugin-extras-google-play-services" url="https://github.com/cranberrygame/cordova-plugin-extras-google-play-services" />
     </platform>
 
 	<!-- ios -->
