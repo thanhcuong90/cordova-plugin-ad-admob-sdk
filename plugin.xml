@@ -50,10 +50,7 @@
 
 		<dependency id="com.google.playservices@21.0.0" />
 -->
-
-<!--
 		<dependency id="cordova-plugin-extras-google-play-services" />			
--->		
     </platform>
 
 	<!-- ios -->
