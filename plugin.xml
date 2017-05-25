@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-ad-admob-sdk"
-    version="1.0.35">
+    version="1.0.36">
 	
     <name>Cordova Admob SDK</name>
     <description>Cordova Admob SDK</description>
@@ -66,10 +66,15 @@
 		<framework src="EventKit.framework" />
 		<framework src="EventKitUI.framework" />		
 		<framework src="QuartzCore.framework" />
-
 <!--
 		<hook type="after_plugin_add" src="hooks/after_plugin_add/000-create-links.sh" />
---> 
+-->
+        <config-file target="*-Info.plist" parent="NSCalendarsUsageDescription">
+            <string>AdMob ads use this data.</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
+            <string>AdMob ads use this data.</string>
+        </config-file>
 	</platform>
 	
     <!-- wp8 -->
